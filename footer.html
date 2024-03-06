@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <style>
+        /* html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+} */
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: white;
+  background-color:black;
+  border-top: 1px solid gold ;
+  /* width: 1515px; */
+  width: 1515px;
+  height: 500px;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+    height: 150px;
+    width: 100px;
+    background-color: transparent;
+    margin-left: 190px;
+}
+.footer__logo img
+{
+    height: 100%;
+    width: 100%;
+}
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  /* margin: 0.6em 0; */
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 160px;
+  margin-top: -100px;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+.first-div
+{
+    height: 90px;
+    width: 1515px;
+    border-bottom: solid 2px gold;
+    display: flex;
+
+}
+.col
+{
+    height: 70px;
+    width: 200px;
+    /* background-color: #999; */
+    margin-left: 240px;
+    float: left;
+
+}
+.col img
+{
+    width: 40%;
+    height: 100%;
+}
+.col h1{
+    color: gold;
+    margin-top: -70px;
+    font-size: 17px;
+    text-align: center;
+}
+.col p{
+    text-align: center;
+    margin-left: 50px;
+}
+address
+{
+    text-align: center;
+}
+.nav__ul
+{
+    color: gray;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.input-field {
+  position: relative;
+}
+.input-field input {
+  width: 200px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  /* border: 2px solid #fff; */
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+input:focus {
+  border: 2px solid #ffcc00;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #353842;
+}
+
+
+.perfect-btn {
+  height:40px;
+  width:100px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:0.5rem;
+  border:none;
+  transition: all 0.2s;
+  background: gold;
+  color: black;
+  cursor:pointer;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.perfect-btn:hover {
+  background: #000;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -200px;
+
+}
+
+.social{
+  margin: 20px;
+	height: 60px;
+	width: 60px;
+  border-radius: 40px;
+  box-shadow: -5px 5px 15px #333;
+  text-align: center;
+  transition: all 0.3s;
+  overflow: hidden;
+  
+}
+
+.social:hover{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.social-icon{
+	text-decoration: none;
+	color: #e7e7e7;
+  padding: 14px;
+  margin-left: -18px; 
+	font-size: 35px;
+}
+
+.social-icon:hover{
+  animation: slide 1s ease;
+}
+
+.social>a{
+	padding: 20px;
+}
+
+.social:nth-child(1){
+	background: #3b5999;
+}
+
+.social:nth-child(2){
+	background: #38A1F3;
+}
+
+.social:nth-child(3){
+	background: #db4a39;
+}
+
+.social:nth-child(4){
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social:nth-child(5){
+	background: #0077B5;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  51%{
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+</style> 
+</body>
+</html>
+<footer class="footer">
+    <div class="first-div">
+        <div class="col">
+            <img src="2.png">
+            <h1>
+                FIND US
+            </h1>
+            <p>
+                1010 Avenue, sw 54321, chandigarh
+            </p>
+
+        </div>
+        <div class="col">
+            <img src="4.png">
+            <h1>
+                CALL US
+            </h1>
+            <p>
+                9876543210 0
+            </p>
+        </div>
+        <div class="col">
+            <img src="3.png">
+            <h1>
+                MAIL US
+            </h1>
+            <p>
+                historical@.com
+            </p>
+        </div>
+
+    </div>
+    <div class="footer__addr">
+      <div class="footer__logo">
+        <img src="1.png">
+        
+      </div>
+          
+      <!-- <span>a copyright notice, link to a privacy policy, sitemap, logo, contact information, social media icons, and an email sign-up form</span> -->
+      
+      <address>
+        a copyright notice, link to a privacy policy, sitemap,<br> logo, contact information, social media icons,<br> and an email sign-up form<br>
+            
+        <!-- <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a> -->
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">USEFULL LINK</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">home !</a>
+          </li>
+  
+          <li>
+            <a href="#">gallery!</a>
+          </li>
+              
+          <li>
+            <a href="#">feedback!</a>
+          </li>
+          <li>
+            <a href="#">contact us</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">PLACES </h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+          
+          <li>
+            <a href="#">Automation</a>
+          </li>
+          
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+          
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">SUBSCRIBE</h2>
+        
+        <ul class="nav__ul">
+          <P>
+            Don’t miss to subscribe to our new feeds, kindly fill the form below.
+          </P>
+          
+          <div class="input-field">
+            <input type="text" required spellcheck="false">
+            <label>Enter email</label>
+          </div>
+          <button class="perfect-btn">SUBMIT</button>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <h1>FOLLOW US</h1>
+      
+      
+<div class="icons">
+    <div class="social">
+      <a href="#">
+        <i class="social-icon fab fa-facebook-f"></i>
+      </a>
+    </div>
+    <div class="social">
+      <a href="#">
+        <i class="social-icon fab fa-twitter"></i>  
+      </a>
+    </div>
+   
+    
+    <div class="social">
+      <a href="#">
+        <i class="social-icon fab fa-instagram"></i> 
+      </a>
+    </div>
+    <div class="social">
+      <a href="#">
+        <i class="social-icon fab fa-linkedin-in"></i>   
+      </a>
+    </div>
+  </div>
+    </div>
+  </footer>

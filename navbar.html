@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            height: 50px;
+            /* line-height: 50px; */
+            background-color: rgb(249, 249, 249);
+
+        }
+
+        ul {
+            display: inline-flex;
+
+
+        }
+
+        ul li {
+            list-style-type: none;
+            width: 150px;
+            outline: none;
+            padding-top: -10px;
+            text-align: center;
+            margin-left: 10px;
+            color: black;
+            font-size: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+
+
+        }
+
+        ul li:hover {
+         
+            width: 150px;
+            outline: none;
+            transition: all 1s linear;
+        }
+
+        ul li ul {
+            display: block;
+            flex-direction: column;
+            margin-left: -10px;
+
+        }
+
+        ul li ul li {
+            display: none;
+        }
+
+        ul li:hover ul li {
+            display: block;
+            position: relative;
+            z-index: 100;
+
+        }
+
+        ul li ul li ul {
+            /* margin-top: -50; */
+            margin-left: 150px;
+            position: absolute;
+
+        }
+
+        ul li ul li:hover ul li {
+            position: relative;
+            z-index: 100;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+            <li>
+                <a href="">History</a>
+            </li>
+            <li>
+                <a href="">Historical Places</a>
+                <ul>
+                    <li><a href="">Nothern Area</a></li>
+
+
+                    <li><a href="">Southern Area</a></li>
+
+                    <li><a href="">Eastern Area</a></li>
+
+                    <li><a href="">Western Area</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <a href="">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
